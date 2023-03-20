@@ -36,7 +36,15 @@ GENERALE
 .alignItemsBaseline{
     align-items: baseline;
 }
-
+.textCenter{
+    text-align: center;
+}
+.borderRadius10{
+    border-radius: 10%;
+}
+.borderRadius50{
+    border-radius: 50%;
+}
 /*****MISURE WIDTH*****/
 .w100 {width: 100%;}
 .w90  {width: 90%;}
@@ -50,11 +58,22 @@ GENERALE
 .w10  {width: 10%;}
 
 /**************COLORI**********/
-.blue{ background-color: #0084fd;}
+.bgBlue  { background-color: #0084fd;}
+.bgWhite { background-color: white;}
+.cWhite  {color: white;}
 
 /*******PADDING E MARGIN***********/
 .mAuto{
     margin: 0 auto;
+}
+.mBottom{
+    margin-bottom: 1rem;
+}
+.mTop{
+    margin-top: 1rem;
+}
+.padding5{
+    padding: 5px;
 }
 
 
@@ -114,13 +133,16 @@ section{
 h4,  p,  button.apple{
     margin: 1rem;
 }
-h4{
+div.boxBottom > h4 , div.box1  h4{
     text-align: center;
     color: #0084fd;
 }
+.bgColorLight{
+    background-color: #b5ddff;   
+}
 .box{
     border-radius: 10%;
-    background-color: #b5ddff;
+
 }
 button.apple{
     border: none;
@@ -169,6 +191,7 @@ PRIMA SEZIONE DOPO 769 PC
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 70%;
     }
     .box.box1{
         flex-direction: row;
@@ -176,5 +199,46 @@ PRIMA SEZIONE DOPO 769 PC
     }
     .box{
         width: 30%;
+    }
+}
+/***************************************
+SECONDA SEZIONE
+****************************************/
+.bgColorViola{
+      background-color: #9792e4;
+}
+.containerSecondSection{
+    width: 90%;
+}
+.boxSecondSectionRight{
+    width: 100%;
+}
+.boxSecondSectionLeft{
+    width: 100%;
+}
+/************************************
+SECONDA SEZIONE TRA 480 E 768 TABLET
+*************************************/
+@media screen and (min-width: 481px ) and ( max-Width: 768px ){
+    
+}
+
+/**************************************
+SECONDA SEZIONE DOPO 769 PC 
+**************************************/
+
+@media screen and ( min-width: 769px ) {
+    .containerSecondSection{
+        width: 70%;
+    }
+    .boxSecondSectionRight{
+        width: 50%;
+    }
+    p.cWhite, h4.cWhite{
+        margin-top: 3rem;
+    }
+    .boxSecondSectionLeft{
+        width: 40%;
+        margin-top: 10rem;
     }
 }
