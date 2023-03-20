@@ -61,7 +61,10 @@ GENERALE
 .bgBlue  { background-color: #0084fd;}
 .bgWhite { background-color: white;}
 .cWhite  {color: white;}
-
+.cViola {color: #9792e4;}
+.bgColorViola{
+      background-color: #9792e4;
+}
 /*******PADDING E MARGIN***********/
 .mAuto{
     margin: 0 auto;
@@ -204,9 +207,7 @@ PRIMA SEZIONE DOPO 769 PC
 /***************************************
 SECONDA SEZIONE
 ****************************************/
-.bgColorViola{
-      background-color: #9792e4;
-}
+
 .containerSecondSection{
     width: 90%;
 }
@@ -240,5 +241,44 @@ SECONDA SEZIONE DOPO 769 PC
     .boxSecondSectionLeft{
         width: 40%;
         margin-top: 10rem;
+    }
+}
+/******************************************
+TERZA SEZIONE
+******************************************/
+.ContainerThreeSection{
+    width: 90%;
+}
+.Box1ThreeSection, .Box2ThreeSection, .Box3ThreeSection, .Box4ThreeSection {
+    width: 100%;
+    margin: auto;
+}
+/************************************
+TERZA SEZIONE TRA 480 E 768 TABLET
+*************************************/
+@media screen and (min-width: 481px ) and ( max-Width: 768px ){
+    .Box2ThreeSection, .Box3ThreeSection, .Box4ThreeSection{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border-radius: 20px;
+        gap: 1rem;
+    }
+}
+/**************************************
+SECONDA SEZIONE DOPO 769 PC 
+**************************************/
+
+@media screen and ( min-width: 769px ) {
+    .Box2ThreeSection, .Box3ThreeSection, .Box4ThreeSection{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border-radius: 20px;
+        gap: 1rem;
+
+    }
+    .ContainerThreeSection{
+        width: 70%;
     }
 }
