@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**************************************
+GENERALE
+*************************************/
+.flex{
+    display: flex;
+}
+.justifyContentBetween{
+    justify-content: space-between;
+}
+.justifyContentEnd{
+    justify-content: flex-end;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.alignContentCenter{
+    align-content: center;
+}
+.alignItemsCenter{
+    align-items: center;
+}
+.alignItemsBaseline{
+    align-items: baseline;
+}
+
+/*****MISURE WIDTH*****/
+.w100 {width: 100%;}
+.w90  {width: 90%;}
+.w80  {width: 80%;}
+.w70  {width: 70%;}
+.w60  {width: 60%;}
+.w50  {width: 50%;}
+.w40  {width: 40%;}
+.w30  {width: 30%;}
+.w20  {width: 20%;}
+.w10  {width: 10%;}
+
+/**************COLORI**********/
+.blue{ background-color: #0084fd;}
+
+/*******PADDING E MARGIN***********/
+.mAuto{
+    margin: 0 auto;
+}
+
+
+/*******************************
+HEADER
+********************************/
+.headerRight{
+    justify-content: flex-end;
+}
+.hamburger{
+    display: inline;
+    color: white;
+}
+.none{
+    display: none;
+}
+.logo{
+    margin: 0.5rem 0;
+}
+.container{
+    width: 90%;
+}
+/********************************
+HEADER SUPERIORE A 769PX 
+*******************************/
+
+@media screen and ( min-width: 769px ) {
+    
+    .headerRight{
+        justify-content: space-between;
+    }
+    
+    .hamburger, .hamburger1{
+        display: none;
+    }
+    .none{
+        display: inline;
+    }
+
+    nav button{
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
+        border: none;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    
+}
