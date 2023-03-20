@@ -9,14 +9,23 @@ GENERALE
 .flex{
     display: flex;
 }
+.flexDirectioneColumn{
+    flex-direction: column;
+}
 .justifyContentBetween{
     justify-content: space-between;
 }
 .justifyContentEnd{
     justify-content: flex-end;
 }
+.justifyContentCenter{
+    justify-content: center;
+}
 .wrap{
     flex-wrap: wrap;
+}
+.gap{
+    gap: 2rem;
 }
 .alignContentCenter{
     align-content: center;
@@ -54,9 +63,6 @@ HEADER
 ********************************/
 .headerRight{
     justify-content: flex-end;
-}
-.hamburger{
-    display: inline;
     color: white;
 }
 .none{
@@ -78,7 +84,7 @@ HEADER SUPERIORE A 769PX
         justify-content: space-between;
     }
     
-    .hamburger, .hamburger1{
+    div.hamburger{
         display: none;
     }
     .none{
@@ -87,7 +93,7 @@ HEADER SUPERIORE A 769PX
 
     nav button{
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 10%;
         background-color: white;
         border: none;
         margin-top: 1rem;
@@ -102,3 +108,73 @@ HEADER SUPERIORE A 769PX
 /************************************
 PRIMA SEZIONE
 *************************************/
+section{
+    margin: 2rem auto;
+}
+h4,  p,  button.apple{
+    margin: 1rem;
+}
+h4{
+    text-align: center;
+    color: #0084fd;
+}
+.box{
+    border-radius: 10%;
+    background-color: #b5ddff;
+}
+button.apple{
+    border: none;
+    border-radius: 50%;
+    background-color: #0084fd;
+    color: white;
+    padding: 1rem;
+}
+
+.boxBottom{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.boxTop{
+    color: #0084fd;
+    font-size: 5rem;
+    margin: 2rem;
+}
+/************************************
+PRIMA SEZIONE TRA 480 E 768 TABLET
+*************************************/
+@media screen and (min-width: 481px ) and ( max-Width: 768px ){
+   section.uno{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 90%;
+    }
+    .box.box1{
+        width: 60%;
+    }
+    .box{
+        width: 30%;
+    }
+    
+}
+
+/**************************************
+PRIMA SEZIONE DOPO 769 PC 
+**************************************/
+
+@media screen and ( min-Width: 769px ) {
+    section.uno{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .box.box1{
+        flex-direction: row;
+        width: 60%;
+    }
+    .box{
+        width: 30%;
+    }
+}
