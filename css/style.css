@@ -45,6 +45,12 @@ GENERALE
 .borderRadius50{
     border-radius: 50%;
 }
+.font2rem{
+    font-size: 2rem;
+}
+.font1-5rem{
+    font-size: 1.5rem;
+}
 /*****MISURE WIDTH*****/
 .w100 {width: 100%;}
 .w90  {width: 90%;}
@@ -58,13 +64,13 @@ GENERALE
 .w10  {width: 10%;}
 
 /**************COLORI**********/
-.bgBlue  { background-color: #0084fd;}
-.bgWhite { background-color: white;}
-.cWhite  {color: white;}
-.cViola {color: #9792e4;}
-.bgColorViola{
-      background-color: #9792e4;
-}
+.bgBlue        {background-color: #0084fd;}
+.bgWhite       {background-color: white;}
+.cWhite        {color: white;}
+.cViola        {color: #9792e4;}
+.cOrange       {color: goldenrod;}
+.bgColorViola  {background-color: #9792e4;}
+.bcBlack       {background-color: black;}
 /*******PADDING E MARGIN***********/
 .mAuto{
     margin: 0 auto;
@@ -77,6 +83,9 @@ GENERALE
 }
 .padding5{
     padding: 5px;
+}
+.mLeft{
+    margin-left: 1rem;
 }
 
 
@@ -101,7 +110,9 @@ HEADER SUPERIORE A 769PX
 *******************************/
 
 @media screen and ( min-width: 769px ) {
-    
+    .container{
+        width: 60%;
+    }
     .headerRight{
         justify-content: space-between;
     }
@@ -324,7 +335,7 @@ QUARTA SEZIONE TRA 480 E 768 TABLET
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 90%;
+        width: 100%;
         justify-content: center;
     }
     .scheda{
@@ -333,7 +344,7 @@ QUARTA SEZIONE TRA 480 E 768 TABLET
 }
 
 /**************************************
-TERZA SEZIONE DOPO 769 PC 
+QUARTA SEZIONE DOPO 769 PC 
 **************************************/
 
 @media screen and ( min-width: 769px ){
@@ -358,3 +369,140 @@ TERZA SEZIONE DOPO 769 PC
 /***********************************
 QUINTA SEZIONE
 ************************************/
+.containerFiveSection{
+    width: 90%;
+}
+/************************************
+QUINTA SEZIONE TRA 480 E 768 TABLET
+*************************************/
+@media screen and (min-width: 481px ) and ( max-Width: 768px ){
+    .containerFiveSection{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+    .boxLeftSectionFive{
+        width: 60%;
+    }
+    .boxRightSectionFive{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/**************************************
+QUINTA SEZIONE DOPO 769 PC 
+**************************************/
+
+@media screen and ( min-width: 769px ){
+    .containerFiveSection{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+    }
+    .boxLeftSectionFive{
+        width: 60%;
+    }
+    .boxRightSectionFive{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/******************************************
+SESTA SEZIONE
+*******************************************/
+.containerSixSection{
+    width: 90%;
+}
+.containerSixSection > h2{
+    font-size: 3rem;
+    padding: 2rem;
+}
+.containerSixSection > h4{
+    padding-top: 3rem;
+    opacity: 0.5;
+}
+.containerSixSection > button {
+    background-color: white;
+    color: #9792e4;
+    padding: 5px;
+    border-radius: 20px;
+    width: 50%;
+    border: none;
+}
+.containerSixSection:last-child{
+    padding-bottom: 2rem;
+}
+
+section.SixSection{
+    margin-bottom: 0;
+}
+p > span{
+    text-decoration: underline solid white;
+}
+
+
+/************************************
+SESTA SEZIONE TRA 480 E 768 TABLET
+*************************************/
+@media screen and (min-width: 481px ) and ( max-Width: 768px ){
+    .containerSixSection{
+        width: 70%;
+        margin: auto;
+    }
+    .containerSixSection > button {
+        width: 30%;
+    }
+}
+
+/**************************************
+SESTA SEZIONE DOPO 769 PC 
+**************************************/
+
+@media screen and ( min-width: 769px ){
+    .containerSixSection{
+        width: 50%;
+        margin: auto;
+    }
+    .containerSixSection > button {
+        width: 30%;
+    }
+}
+/*******************************************
+FOOTER
+*******************************************/
+.containerFooter{
+    width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/************************************
+FOOTER SEZIONE TRA 480 E 768 TABLET
+*************************************/
+@media screen and (min-width: 481px ) and ( max-Width: 768px ){
+    .containerFooter{
+        width: 70%;
+    }
+}
+
+/**************************************
+FOOTER SEZIONE DOPO 769 PC 
+**************************************/
+
+@media screen and ( min-width: 769px ){
+    .containerFooter{
+        width: 50%;
+        margin: auto;
+    }
+
+}
