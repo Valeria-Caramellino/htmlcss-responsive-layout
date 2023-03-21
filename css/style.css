@@ -51,6 +51,9 @@ GENERALE
 .font1-5rem{
     font-size: 1.5rem;
 }
+.font5rem{
+    font-size: 5rem;
+}
 /*****MISURE WIDTH*****/
 .w100 {width: 100%;}
 .w90  {width: 90%;}
@@ -64,6 +67,7 @@ GENERALE
 .w10  {width: 10%;}
 
 /**************COLORI**********/
+.cBlue         {color: #0084fd}
 .bgBlue        {background-color: #0084fd;}
 .bgWhite       {background-color: white;}
 .cWhite        {color: white;}
@@ -71,6 +75,7 @@ GENERALE
 .cOrange       {color: goldenrod;}
 .bgColorViola  {background-color: #9792e4;}
 .bcBlack       {background-color: black;}
+.bgColorLight  {background-color: #b5ddff;}
 /*******PADDING E MARGIN***********/
 .mAuto{
     margin: 0 auto;
@@ -147,17 +152,7 @@ section{
 h4,  p,  button.apple{
     margin: 1rem;
 }
-div.boxBottom > h4 , div.box1  h4{
-    text-align: center;
-    color: #0084fd;
-}
-.bgColorLight{
-    background-color: #b5ddff;   
-}
-.box{
-    border-radius: 10%;
 
-}
 button.apple{
     border: none;
     border-radius: 20px;
@@ -165,35 +160,35 @@ button.apple{
     color: white;
     padding: 1rem;
 }
+.card2 , .Card1 , .card3{
+    width: 100%;
+}
 
-.boxBottom{
-    padding-bottom: 2rem;
-    text-align: center;
-}
-.boxTop{
-    color: #0084fd;
-    font-size: 5rem;
-    margin: 2rem;
-}
 /************************************
 PRIMA SEZIONE TRA 480 E 768 TABLET
 *************************************/
 @media screen and (min-width: 481px ) and ( max-Width: 768px ){
-   section.uno{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .container{
-        width: 60%;
-    }
-    .box.box1{
-        width: 60%;
-    }
-    .box{
-        width: 30%;
-    }
-    
+    .boxTopFistSection{
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .boxBottomFistSection{
+    display: flex;
+    gap: 1rem;
+  }
+  .Card1{
+    width: 60%;
+  }
+  .card2{
+    width: calc( 100% / 3 - 2rem );
+  }
+  .card3{
+    width: calc( 100% / 3 - 2rem );
+  }
+  .container{
+    width: 90%;
+  }
 }
 
 /**************************************
@@ -201,20 +196,6 @@ PRIMA SEZIONE DOPO 769 PC
 **************************************/
 
 @media screen and ( min-Width: 769px ) {
-    section.uno{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 60%;
-    }
-    .box.box1{
-        flex-direction: row;
-        width: 60%;
-    }
-    .box{
-        width: 30%;
-
-    }
     .phone{
         margin-top: 9.5rem;
     }
@@ -268,6 +249,8 @@ TERZA SEZIONE
     width: 100%;
     margin: auto;
 }
+
+
 /************************************
 TERZA SEZIONE TRA 480 E 768 TABLET
 *************************************/
@@ -294,7 +277,7 @@ TERZA SEZIONE DOPO 769 PC
 
     }
     .ContainerThreeSection{
-        width: 60%;
+        width: 70%;
     }
 }
 /******************************************
